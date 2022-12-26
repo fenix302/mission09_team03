@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'CookieRun';
+    src: url('../../resources/Jaeheon/fonts/CookieRun\ Bold.ttf');
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media only screen and (min-width : 1200px) {
+    .submenu{display: none}
+}W
+
+
+*{
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333;
+    font-weight: bold;
+}
+
+.container-fluid>a{
+    font-size: 40px;
+    font-family: 'CookieRun';
+}
+
+.container-fluid>a>span{
+    color: rgba(109, 77, 66, 1);
+    font-family: 'CookieRun';
+}
+
+.margin-order{
+    text-align: center;
+    width: 90px;
+    margin-right: 200px;
+}
+
+.nav-item>a{
+    color: #333;
+    font-size: 30px;
+    font-family: 'CookieRun';
+}
+
+.submenu{
+    padding-left: 25px;
+    width: 150px;
+    position: absolute !important;
+    margin-top: 50px;
+    top: 75px;
+    display: none;
+    z-index: 1;
+    background-color: #333;
+}
+
+.submenu>li{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.submenu>li>a{
+    font-size: 16px;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.submenu>li>a:hover{
+    color: #ffc400;
+}
