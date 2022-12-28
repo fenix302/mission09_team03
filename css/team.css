@@ -9,7 +9,7 @@ body {
 	width: 100vw;
 	height: 1000px;
 	margin: 0;
-	background-image: url(../resources/Team3/images/chrismas.jpg);
+	background-image: url("../resources/Team3/images/chrismas.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -108,4 +108,14 @@ h1>img{
 	to {
 		transform: translateY(140vh);   /*눈이 최종적으로 떨어질 수 있는 y값 조절*/
 	}
+}
+
+/* a 링크 색상 제거 */
+li > a {
+	text-decoration: none;
+	color: #fff;
+}
+
+li > a:hover{
+	color: rgb(120, 156, 189);
 }
