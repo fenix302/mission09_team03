@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDIO DIDIT</title>
 
-    <link rel="stylesheet" href="/css/KMJ_main.css">
+    <link rel="stylesheet" href="../css/KMJ_main.css">
     <link
     href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Noto+Serif+KR:wght@200&display=swap"
     rel="stylesheet"
@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="../css/bootstrap.css" />
     <script src="../javascript/jquery-1.12.3.js"></script>
     <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="../css/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- owlcarousel -->
+        <link rel="stylesheet" href="../css/owlcarousel/assets/owl.carousel.min.css">
+        <link rel="stylesheet" href="../css/owlcarousel/assets/owl.theme.default.min.css">
+      
 </head>
 <body>
     
@@ -65,6 +71,51 @@
            </nav>
         </div>
      </div>
+      
+      <!-- 컨텐츠(영상) --> 
+      <div class="owl-carousel">
+         <div> <img class="pic" src="../resources/minji/images/02.jpg" alt="#"> </div>
+         <div> <img class="pic" src="../resources/minji/images/03.jpg" alt="#"> </div>
+         <div> <img class="pic" src="../resources/minji/images/04.jpg" alt="#"> </div>
+         <div> <img class="pic" src="../resources/minji/images/05.jpg" alt="#"> </div>
+         <div> <img class="pic" src="../resources/minji/images/06.jpg" alt="#"> </div>
+      </div>
+      <script>
+         $(document).ready(function(){
+         $(".owl-carousel").owlCarousel();
+         });
+         
+         var owl = $('.owl-carousel');
+         owl.owlCarousel({
+            items:3,
+            loop:true,
+            autoplay:true,
+            autoplayTimeout:4000,
+         });
+      </script>
+      
+
+     
+     <!-- 컨텐츠(공지) -->
+     <div id="notice1">
+        <div id="notice_text">
+           <p class="text_large">공지사항</p>
+           <a href="#"><p class="text">STUDIO DIDIT 설날 연휴영업 안내</p></a>
+           <a href="#"><p class="text">모리네집 ANIMAL STORE 진행 안내</p></a>
+           <a href="#"><p class="text">구찌 신세계백화점 하남점 POP-UP STUDIO 운영</p></a>
+         </div>
+      </div>
+      
+      <!-- 푸터 -->
+      <footer>
+         <div id="foot">
+            (주) STUDIO DIDIT <br />
+            대표자명 | 김민지 <br />
+            연락처 | 010-1234-5678 <br />
+            주소 | 서울특별시 구로구 경인로 557 삼영빌딩 4층 <br />
+            COPYRIGHT © KimMinJi
+         </div>
+      </footer>
 
 </body>
 </html>
