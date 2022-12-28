@@ -1,20 +1,75 @@
-@charset "UTF-8";
+@charset "utf-8";
 
 *{
     margin: 0;
     padding: 0;
-    list-style: none;
+    font-family: 'ga';
 }
 
-a{
-    text-decoration: none;
+@font-face {
+    font-family: 'ga';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-#navigation{
-    width: 85%;
+
+.navigation{
+    width: 100%;
+    position: absolute;
     margin: 0 auto;
-    font-size: 25px;
+    z-index: 100;
+}
+
+#tubular-container{
+    z-index: 0 !important;
+}
+.mainvideo{
+    height: 1100px;
+}
+
+.imgtext{
+    height: 300px;
+    width: 500px;
+    position: absolute;
+    padding-top: 30px;
+    margin: -15px 0 0 -250px;
+    left: 50%;
+    top: 25%;
+    text-align: center;
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: rgba(17, 15, 15, 0.5);
+}
+footer{
+    padding-bottom: 100px;
+    height: 200px;
+    background-color: rgb(14, 12, 12);
     position: relative;
 }
 
+.btmenu{
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    padding-top: 25px;
+}
 
+.btmenu li{
+    position: relative;
+    margin: 0  100px 0 100px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+
+.btmenu li a{
+    text-decoration: none;
+}
+
+.copy{
+    margin-top: 50px;
+    text-align: center;
+    color: #Fff;
+}
