@@ -25,23 +25,32 @@
     z-index: 0 !important;
 }
 .mainvideo{
-    height: 1100px;
+    height: 970px;
 }
 
-.imgtext{
-    height: 300px;
-    width: 500px;
+.videotext{
     position: absolute;
     padding-top: 30px;
     margin: -15px 0 0 -250px;
-    left: 50%;
-    top: 25%;
-    text-align: center;
+    left: 55%;
+    top: 35%;
     color: #ffffff;
-    font-size: 40px;
-    font-weight: bold;
-    background-color: rgba(17, 15, 15, 0.5);
 }
+
+.carousel{
+    text-align: center;
+    margin-top: 200px;
+}
+
+.carousel > h1{
+    font-size: 70px;
+    line-height: 60px;
+}
+
+.carousel > span{
+    font-size: 25px;
+}
+
 footer{
     padding-bottom: 100px;
     height: 200px;
