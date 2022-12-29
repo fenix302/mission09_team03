@@ -1,25 +1,20 @@
-
-
+var resize = window.innerWidth
 jQuery(document).ready(function(){
-    $('.navbar-nav > li').mouseover(function(){
-        $(this).find('.submenu').stop().slideDown(500);  
-    }).mouseout(function(){
-        $(this).find('.submenu').stop().slideUp(500);
-    });
+    if(resize >= '1200'){
+        $('.navbar-nav > li').mouseover(function(){
+            $(this).find('.submenu').stop().slideDown(500);  
+        }).mouseout(function(){
+            $(this).find('.submenu').stop().slideUp(500);
+        });
+    } else if(resize < '1200'){
+        $(this).toggleClass('submenu');
+    }
 });
 
-var re1 = document.getElementsByClassName("submenu");
-console.log(re1);
 
-window.onresize = function(){
-    var width = window.innerWidth;
-    var height = window.innerHeight;
 
-    if(width <= "1200"){
-        resize.mouseover.stop();
-    }
 
-}
+
 
 
 

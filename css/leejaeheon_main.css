@@ -12,9 +12,15 @@
     font-style: normal;
 }
 
-@media only screen and (min-width : 1200px) {
-    .submenu{display: none}
-}W
+@media only screen and (max-width : 1200px) {
+    .submenu{
+        left: 200px;
+        background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+    }
+    .submenu>li>a{
+        color: #333 !important;
+    }
+}
 
 
 *{
@@ -36,8 +42,8 @@
 
 .margin-order{
     text-align: center;
-    width: 90px;
-    margin-right: 200px;
+    width: 50px;
+    margin-right: 150px;
 }
 
 .nav-item>a{
