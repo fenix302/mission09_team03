@@ -39,7 +39,7 @@
 
 .carousel{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 180px;
 }
 
 .carousel > h1{
@@ -49,6 +49,10 @@
 
 .carousel > span{
     font-size: 25px;
+}
+
+.business  > img{
+    margin-top: 500px;
 }
 
 footer{
