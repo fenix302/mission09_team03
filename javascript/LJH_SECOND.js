@@ -12,6 +12,18 @@ jQuery(document).ready(function(){
 });
 
 
+$(function(){
+    $('.height-20em').vegas({
+        delay: 3000,
+        slides: [
+            { src: '../resources/jaeheon/images/game1.jpg' },
+            { src: '../resources/jaeheon/images/game2.jpg' },
+            { src: '../resources/jaeheon/images/game3.jpg' },
+        ]
+    });
+});
+
+
 
 
 
