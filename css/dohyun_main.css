@@ -33,7 +33,7 @@
     padding-top: 30px;
     margin: -15px 0 0 -250px;
     left: 55%;
-    top: 35%;
+    top: 45%;
     color: #ffffff;
 }
 
@@ -44,7 +44,6 @@
 
 .carousel > h1{
     font-size: 70px;
-    line-height: 60px;
 }
 
 .carousel > span{
@@ -53,6 +52,28 @@
 
 .business  > img{
     margin-top: 500px;
+}
+
+.imgtext1{
+    position: absolute;
+    padding-top: 30px;
+    font-size: 50px;
+    margin: -15px 0 0 -250px;
+    left: 58%;
+    top: 35%;
+    color: #ffffff;
+    background-color: rgba(126, 125, 125, 0.719);
+}
+
+.imgtext2{
+    position: absolute;
+    padding-top: 30px;
+    font-size: 50px;
+    margin: -15px 0 0 -250px;
+    left: 55%;
+    top: 35%;
+    color: #ffffff;
+    background-color: rgba(126, 125, 125, 0.719);
 }
 
 footer{
