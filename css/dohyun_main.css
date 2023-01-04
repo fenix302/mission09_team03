@@ -29,17 +29,30 @@
 }
 
 .videotext{
+    width: auto;
     position: absolute;
     padding-top: 30px;
+    padding-left: 22px;
     margin: -15px 0 0 -250px;
-    left: 55%;
+    left: 46.5%;
     top: 45%;
     color: #ffffff;
 }
 
-.carousel{
+.videotext > h1{
+    font-size: 72px;
     text-align: center;
-    margin-top: 180px;
+}
+
+.videotext > p{
+    font-size: 40px;
+    text-align: center;
+}
+
+.carousel{
+    height: 870px;
+    text-align: center;
+    margin-top: 100px;
 }
 
 .carousel > h1{
@@ -50,31 +63,33 @@
     font-size: 25px;
 }
 
-.business  > img{
-    margin-top: 500px;
-}
 
 .imgtext1{
+    width: 500px;
+    height: 300px;
     position: absolute;
-    padding-top: 30px;
+    padding-top: 80px;
     font-size: 50px;
-    margin: -15px 0 0 -250px;
-    left: 58%;
-    top: 35%;
+    margin: 0 0 0 -250px;
+    left: 50%;
+    top: 10%;
     color: #ffffff;
-    background-color: rgba(126, 125, 125, 0.719);
+    background-color: rgba(102, 101, 101, 0.247);   
 }
 
 .imgtext2{
+    width:500px;
+    height: 300px;
     position: absolute;
-    padding-top: 30px;
+    padding-top: 80px;
     font-size: 50px;
-    margin: -15px 0 0 -250px;
-    left: 55%;
-    top: 35%;
+    margin: 0 0 0 -250px;
+    left: 50%;
+    top: 10%;
     color: #ffffff;
-    background-color: rgba(126, 125, 125, 0.719);
+    background-color: rgba(102, 101, 101, 0.247);   
 }
+
 
 footer{
     padding-bottom: 100px;
