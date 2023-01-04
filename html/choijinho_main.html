@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="../css/choijinho_main.css">
     <script src="../javascript/jquery-1.12.3.js"></script>
     <script src="../javascript/choijinho_main.js"></script>
+    <script src="../javascript/jquery.cookie.js"></script>
     <!-- Channel Plugin Scripts -->
     <script>
         (function() {
@@ -608,5 +609,14 @@
             </div>
         </div>
     </form>
+    <!-- 팝업창 쿠키 적용 -->
+    <div id="notice_wrap">
+        <img src="../resources/jinho/images/popup_cjh.png" alt="공지사항 이미지">
+        <p class="closeWrap">
+            <input type="checkbox" name="expiresChk" id="expiresChk">
+            <label for="expiresChk">3일 동안 이 창 열지 않기</label>
+            <button class="closeBtn">닫기</button>
+        </p>
+    </div>
 </body>
 </html>
