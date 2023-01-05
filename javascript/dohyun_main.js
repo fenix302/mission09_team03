@@ -75,3 +75,21 @@ $('.business').bxSlider({
   ChannelIO('boot', {
     "pluginKey": "7e6b5937-e622-4639-9f0c-a4ff9c80aa17"
   });
+  var target = document.querySelectorAll('.btn_open'); // 클릭할 버튼요소를 변수 처리
+
+  $(document).ready(function(){
+    // popup 클래스를 클릭하면
+    $(".popup").click(function(){
+      // #modal과 일치하는 요소에 'active' 클래스를 추가함
+      $("#modal").addClass("active");
+  });
+
+  // .closebtn 요소를 클릭하면
+  $(".closeBtn").click(function(){
+      // #modal의 'active' 클래스를 삭제함
+      $("#modal").removeClass("active")
+  });
+  
+}); 
+
+  
