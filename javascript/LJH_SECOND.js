@@ -1,15 +1,21 @@
-var resize = window.innerWidth
+
 jQuery(document).ready(function(){
-    if(resize >= '1200'){
-        $('.navbar-nav > li').mouseover(function(){
-            $(this).find('.submenu').stop().slideDown(500);  
-        }).mouseout(function(){
-            $(this).find('.submenu').stop().slideUp(500);
-        });
-    } else if(resize < '1200'){
-        $(this).toggleClass('submenu');
-    }
-});
+            $('.navbar-nav > li').mouseover(function(){
+                    $(this).find('.submenu').stop().slideDown(500);  
+                }).mouseout(function(){
+                        $(this).find('.submenu').stop().slideUp(500);
+                    });
+                });
+            
+            
+            
+// var resize = window.innerWidth
+// var c = document.getElementsByClassName("submenu");
+// resize.
+// window.onresize = function(event){
+//     resize >= 1200 ? c.control : c.control2;
+// }
+
 
 
 $(function(){
@@ -22,6 +28,8 @@ $(function(){
         ]
     });
 });
+
+
 
 
 

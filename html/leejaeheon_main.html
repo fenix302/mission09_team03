@@ -1,102 +1,207 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        <link rel="stylesheet" href="../css/leejaeheon.css">
-        <script src="../javascript/jquery-1.12.3.js"></script>
-        <script src="../javascript/LJH_FIRST.js" defer type="text/javascript"></script>
-    </head>
-    <body>
-        <div id="box">
-        <header>
-            <div class="top">
-                <div class="logo">
-                    <a href="#"><img src="../resources/Jaeheon/images/coconut.ico" alt="코코아" style="width: 100%"; height="100%";></a>
-                </div>
-                <div class="companyname">
-                    <a href="#"><span>코코넛</span>게임즈</a>
-                </div>
-                <nav class="menu">
-                    <ul class="navi">
-                        <li>
-                            <a href="#">COMPANY</a>
-                            <ul class="submenu">
-                                <li><a href="#">인사말</a></li>
-                                <li><a href="#">조직도</a></li>
-                                <li><a href="#">오시는길</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">BUSINESS</a>
-                            <ul class="submenu">
-                                <li><a href="#">게임</a></li>
-                                <li><a href="#">IP비즈니스&테크</a></li>
-                                <li><a href="#">투자</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">MEDIA</a>
-                            <ul class="submenu">
-                                <li><a href="#">뉴스</a></li>
-                                <li><a href="#">멀티미디어</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">CAREER</a>
-                            <ul class="submenu">
-                                <li><a href="#">인재채용</a></li>
-                                <li><a href="#">채용공고</a></li>
-                                <li><a href="#">기술교육</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="" class="login">로그인</a>
-            </div>
-        </header>
-        <div class="bodywrap">
-            <div class="imgslide">
-                <span>찾아오는 길</span>
-                
-            </div>
-            <div class="content">
-                <div class="content_title">
-                    <p><span>코코넛</span>게임즈 찾아오는 길</p>   
-                </div>
-                <div class="content_notification">
-                    <p>방문 안내사항</p>
-                    <div>
-                        방문 시에는 반드시 마스크를 착용해 주시고, 코로나19 방역수칙을 지켜주시기 바랍니다. <br>
-                         - 코로나19 마스크 착용 준수 안내 <br>
-                         - 코로나19 방역수칙 <br>
-                    </div>
-                </div>
-                <div id="map" style="width:1200px;height:300px;"></div>
-                <p>주소 : 서울특별시 강남구 청담동 13-29 코코넛게임즈 본사</p>
-            </div>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/leejaeheon_main.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/vegas.min.css">
+    <script src="../javascript/bootstrap.bundle.min.js"></script>
+    <script src="../javascript/jquery-1.12.3.js"></script>
+    <script src="../javascript/vegas.min.js" defer></script>
+    <script src="../javascript/jquery.cookie.js"></script>
+    <script>
+      $(function () {
+         //쿠키("popup")의 값이 'none'이면 id 값이 인 요소를 숨김니다.
+         if ($.cookie('popup') == 'none') {
+            $('#modal').hide();
+         }
+         var $expireChk = $('#expireChk');
+         $('.closeBtn').on('click', closePop);
+         function closePop() {
+            if ($expireChk.is(':checked')) {
+               $.cookie('popup', 'none', {expires: 3, path: '/'});
+            }
+            $('#modal').fadeOut('fast');
+         }
+      });
+   </script>
+    <script src="../javascript/LJH_FIRST.js" defer type="text/javascript"></script>
+    <script src="../javascript/LJH_SECOND.js" defer type="text/javascript"></script>
+  </head>
+  <body>
+    <!-- 쿠키 적용-->
+  <div id="modal">
+      <div class="modal_up">
+          <div class="uptitle">
+             코코넛 게임즈 공지사항
+          </div>
+          <div class="upbody">
+             2023년 1월 06일 업데이트 <br><br>
+
+             오전 11:00 분 기준으로 점검이 완료되었습니다.
+             행복하고 <br>즐거운 하루 보내시길 바랍니다.<br><br>
+             감사합니다.
+          </div>
+          <p class="closewrap">
+              <input type="checkbox" name="expireChk" id="expireChk" />
+              <label for="expireChk">3일동안 이 창 열지 않기</label>
+              <button class="closeBtn">닫기</button>
+          </p>
+      </div>
+  </div>
+    <nav class="navbar navbar-expand-xl bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../resources/jaeheon/images/coconut.ico" alt="Logo" width="100" height="100" class="d-inline-block align-text-center">
+          <span>코코넛</span>게임즈</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item margin-order">
+              <a class="nav-link" aria-current="page" href="#">COMPANY</a>
+              <ul class="submenu">
+                <li><a href="#">인사말</a></li>
+                <li><a href="#">조직도</a></li>
+                <li><a href="#">오시는길</a></li>
+              </ul>
+            </li>
+            <li class="nav-item margin-order">
+              <a class="nav-link" href="#">BUSINESS</a>
+              <ul class="submenu">
+                <li><a href="#">게임</a></li>
+                <li><a href="#">IP비즈니스</a></li>
+                <li><a href="#">투자</a></li>
+              </ul>
+            </li>
+            <li class="nav-item margin-order">
+              <a class="nav-link" href="#">MEDIA</a>
+              <ul class="submenu">
+                <li><a href="#">뉴스</a></li>
+                <li><a href="#">멀티미디어</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">CAREER</a>
+              <ul class="submenu">
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">채용공고</a></li>
+                <li><a href="#">기술교육</a></li>
+              </ul>
+            </li>
+          </ul>
         </div>
-        <footer>
-            <div class="ftcontent">
-                <div class="ftmenu">
-                    <ul>
-                        <li><a href="#">개인정보처리방침</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">찾아오는 길</a></li>
-                    </ul>
-                </div>
-                <select id="ftlanguage">
-                    <option value="korean">Korean</option>
-                    <option value="korean">English</option>
-                    <option value="korean">Japanese</option>
-                </select>
-            </div>
-            <div class="copy">COPYRIGHT &#169; 2022 Coconutgames Cop All right reserved</div>
-        </footer>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">로그인</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav> 
+    <!-- vegas 적용 -->
+    <div class="width-100 height-20em"></div>
+    <div class="main_section">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb ms-5 mt-3">
+          <li class="breadcrumb-item active" aria-current="page"><a href="#">새소식</a></li>
+          <li class="breadcrumb-item"><a href="#">공지사항</a></li>
+        </ol>
+      </nav>
+      <div class="card-group-xxl">
+        <div class="card text-center" style="width: auto;">
+          <img src="../resources/jaeheon/images/Fortress v2.jpg" class="card-img-top" alt="..." style="height: 18em;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: auto;">
+          <img src="../resources/jaeheon/images/lostark.jpg" class="card-img-top" alt="..." style="height: 18em;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: auto;">
+          <img src="../resources/jaeheon/images/epicseven.jpg" class="card-img-top" alt="..." style="height: 18em;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+        <div class="card text-center" style="width: auto;">
+          <img src="../resources/jaeheon/images/FIFAMobile.jpg" class="card-img-top" alt="..." style="height: 18em;">
+          <div class="card-body">
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+        </div>
+      </div>
     </div>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4a3c4fcfa5a54d02d981e8713d261798"></script>
-    <script src="../javascript/LJH_SECOND.js"></script>
-</body>
-</html>
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <p class="c-white">
+              COPYRIGHT &#169; 2022 Coconutgames Cop All right reserved<br>
+              연락처 : 02-332-4403 <br>
+              주소 : 서울특별시 강동구 강동대로 205(성내동) Coconut Center
+            </p>
+          </div>
+          <div class="col-lg-4 c-white">
+            <div class="icon">
+              <img src="../resources/jaeheon/images/twitter logo_icon.svg" alt="">
+              <img src="../resources/jaeheon/images/facebook_icon.svg" alt="">
+              <img src="../resources/jaeheon/images/instagram_icon.svg" alt="">
+              <img src="../resources/jaeheon/images/youtube_icon.svg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 챗봇 적용-->
+    <!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "916f832d-2d0f-4510-b4e5-1fff1d8e5f32"
+  });
+</script>
+<!-- End Channel Plugin -->
+  </body>
+  </html>
