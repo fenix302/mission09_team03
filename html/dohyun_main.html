@@ -17,68 +17,76 @@
     <script src="../javascript/jquery.bxslider.min.js"></script>
 </head>
 <body>
-    <header>
-        <div class="navigation">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: #fff;">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img src="../resources/dohyun/images/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link">Link</a>
-                  </li>
+</div>
+  <header>
+    <div class="container">
+      <div class="navigation">
+        <nav class="navbar navbar-expand-sm">
+          <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../resources/dohyun/images/logo.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-between" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  회사소개
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">개요</a></li>
+                  <li><a class="dropdown-item" href="#">경영이념</a></li>
+                  <li><a class="dropdown-item" href="#">오시는길</a></li>
                 </ul>
-                <ul class="nav justify-content-">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </nav>
-        </div>
-    </header>
-    <div class="mainvideo container-fluid ">
-      <div class="videotext ">
-        <h1>토탈 물류 솔루션 기업 </h1>
-        <p>DH LOGISTICS</p>
+              </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    BUSINESS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">항만물류</a></li>
+                    <li><a class="dropdown-item" href="#">항공물류</a></li>
+                    <li><a class="dropdown-item" href="#">창고관리시스템</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">인재채용</a>
+                </li>
+                <li class="nav-item">
+                  <a class="popup nav-link" href="#">공지사항</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">고객센터</a>
+                </li>
+            </ul>
+          </div>
+          </div>
+      </nav>
       </div>
+    </div>  
+  </header>
+  <div class="mainvideo container-fluid ">
+    <div class="videotext ">
+      <h1>토탈 물류 솔루션 기업 </h1>
+      <p>DH LOGISTICS</p>
+    </div>
+    </div>
+  </div>
+  <div class="carousel">
+    <h1>Our Business </h1>
+    <span>물류, 그 이상의 가치</span>
+    <div class="business">
+      <div><img src="../resources/dohyun/images/port.jpg" class="img-fluid">
+        <div class="imgtext1">항만 운송</div>
       </div>
-    </div>
-    <div class="carousel">
-      <h1>Our Business </h1>
-      <span>물류, 그 이상의 가치</span>
-      <div class="business">
-        <div><img src="../resources/dohyun/images/port.jpg" class="img-fluid">
-          <div class="imgtext1">항만 운송</div>
-        </div>
-        <div><img src="../resources/dohyun/images/air.jpg" class="img-fluid">
-          <div class="imgtext1">항공 운송</div>
-        </div>
-        <div><img src="../resources/dohyun/images/warehouse.jpg" class="img-fluid">
-          <div class="imgtext2">창고관리시스템</div>
-        </div>
-      </div>      
-    </div>
+      <div><img src="../resources/dohyun/images/air.jpg" class="img-fluid">
+        <div class="imgtext1">항공 운송</div>
+      </div>
+      <div><img src="../resources/dohyun/images/warehouse.jpg" class="img-fluid">
+        <div class="imgtext2">창고관리시스템</div>
+      </div>
+    </div>      
+  </div>
   <footer>
     <div class="btmenu">
       <ul>
