@@ -13,6 +13,7 @@
     font-style: normal;
 }
 
+/* 팝업 창  */
 #modal{
     width: 100%;
     height: 100%;
@@ -27,13 +28,14 @@
 
 .modal_up{
     position: absolute;
-    width: 400px;
-    height: 490px;
-    left: 40%;
+    max-width: 400px;
+    max-height: 900px;
+    left: 31%;
     top: 25%;
     background-color: #ffffff;
 }
 
+/* 팝업 창 제목 */
 .uptitle{
     margin-top: 20px;
     text-align: center;
@@ -42,6 +44,7 @@
     font-weight: bold;    
 }
 
+/* 팝업 내용 */
 .upbody{
     padding: 30px;
     text-align: center;
@@ -49,15 +52,18 @@
     line-height: 40px;    
 }
 
+/* 팝업 닫기 영역 */
 .closewrap{
+    margin-left: 24px;
     width: 100%;
     height: 30px;
 }
 
+/* 닫기 버튼 */
 .closeBtn{
     height: 25px;
     width: 100px;
-    line-height: 20px;
+    line-height: 27px;
     cursor: pointer;
     display: block;
     text-align: center;
@@ -66,14 +72,11 @@
     border-radius: 3px;
     position: absolute;
     right: 30px;
-    bottom: 40px;
+    bottom: 25px;
     color: rgb(17, 16, 16);
 }
 
-#expireChk{
-    margin-left: 30px;
-}
-
+/* 헤더 영역 */
 .container{
     background-color: #fff
 }
@@ -102,7 +105,7 @@
 }
 
 
-
+/* tubular 영역 */
 #tubular-container{
     z-index: 0 !important;
 }
@@ -121,6 +124,7 @@
     color: #ffffff;
 }
 
+/* tubular 영상 안 텍스트 */
 .videotext > h1{
     font-size: 72px;
     text-align: center;
@@ -131,6 +135,7 @@
     text-align: center;
 }
 
+/* carousel 영역 */
 .carousel{
     text-align: center;
     margin-top: 100px;
@@ -144,7 +149,7 @@
     font-size: 25px;
 }
 
-
+/* carousel 이미지 안 텍스트 */
 .imgtext1{
     width: 500px;
     height: 300px;
@@ -171,6 +176,7 @@
     background-color: rgba(102, 101, 101, 0.247);   
 }
 
+/* 채용 영역 */
 .recruitment{
     text-align: center;
     margin-top: 200px;
@@ -189,6 +195,7 @@
     margin-top: 60px;
 }
 
+/* 푸터 영역 */
 footer{
     height: 160px;
     padding-bottom: 100px;

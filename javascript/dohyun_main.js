@@ -30,7 +30,7 @@ $('.business').bxSlider({
   auto: true,
   //컨트롤 버튼(재생/정지) 표시
   centeredSlides: true, // 활성 슬라이드 항상 가운데 배치
-  stopAutoOnclick: true,
+  stopAutoOnclick: true, // 이미지 클릭시 멈춤
 
 });
 });
@@ -77,19 +77,27 @@ $('.business').bxSlider({
   });
   var target = document.querySelectorAll('.btn_open'); // 클릭할 버튼요소를 변수 처리
 
+  
   $(document).ready(function(){
-    // popup 클래스를 클릭하면
-    $(".popup").click(function(){
+    // notice 클래스를 클릭하면
+    $(".notice").click(function(){
       // #modal과 일치하는 요소에 'active' 클래스를 추가함
       $("#modal").addClass("active");
   });
-
   // .closebtn 요소를 클릭하면
   $(".closeBtn").click(function(){
       // #modal의 'active' 클래스를 삭제함
       $("#modal").removeClass("active")
+    });
   });
   
-}); 
+
+
+  
+    
+  
+
+
+ 
 
   
